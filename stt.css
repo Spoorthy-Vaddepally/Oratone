@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    height: 100vh;
+    margin: 2px;
+    padding: 0;
+    background-color: #d8edd8;
+    background-image: url(images-p/sound_wave_background-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#logol {
+    height: 50px;
+    width: 180px;
+    margin-left: 2px;
+}
+
+#login {
+    background-color: black;
+    color: rgb(249, 225, 217);
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login:hover {
+    background-color: #333;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 110px;
+    position: relative;
+    top: -12px;
+}
+.start button {
+    background-color: #000000;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.start button:hover {
+    background-color:#333;
+}
+
+
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 110px;
+}
+.listen {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+    position: relative;
+    top: -20px;
+}
+svg {
+    margin-left: 90px;
+    position: relative;
+    top: -60px;
+}
+#output{
+    font-size: 2rem;
+    position: relative;
+    top:-50px;
+}

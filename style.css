@@ -1,0 +1,461 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d8edd8;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+#logol {
+    height: 50px;
+    width: 180px;
+}
+
+.nav1 {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d8edd8;
+    gap: 10px;
+}
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86vw;
+    height: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.navb {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.login {
+    margin-left: auto;
+    width: 100px;
+}
+.Solutions, .Pricing, .About {
+    margin-left: 20px;
+}
+
+.About { margin-left: 48px; }
+
+.material-symbols-outlined {
+    margin-left: -23px;
+}
+
+#main {
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 4vw, 8rem);
+    padding-left: 2vw;
+}
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 20px;
+}
+
+.wave-svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.wave1, .wave3 {
+    animation: moveforward 2s ease-in-out infinite alternate;
+}
+
+.wave2 {
+    animation: movereverse 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveforward {
+    50% { transform: translateX(-60px); }
+}
+
+@keyframes movereverse {
+    50% { transform: translateX(-100px); }
+}
+
+.text_after_wave {
+    font-weight: 500;
+    font-size: 1.6rem;
+    position: relative;
+    padding-left: 2vw;
+    top: -135px;
+}
+
+.learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 130px;
+    border-radius: 5px;
+    position: relative;
+    top: -110px;
+    margin-left: 2vw;
+}
+
+.box {
+    height: 900px;
+}
+
+
+/* .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #000000;
+    color: #d8edd8;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid #d8edd8;
+    cursor: pointer;
+}
+
+.buttons a:hover {
+    background-color: #333;
+} */.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 2vw;
+    position: relative;
+    z-index: 10; /* Ensures links are on top */
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #000000;
+    color: #d8edd8;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid #d8edd8;
+    cursor: pointer;
+    pointer-events: auto; /* Ensures the links are clickable */
+}
+
+.buttons a:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .nav1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #login, .signin {
+        visibility: hidden;
+    }
+
+    .nav2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #main {
+        font-size: clamp(1.2rem, 6vw, 2.5rem);
+        margin: 10px;
+    }
+
+    .wave-container {
+        height: 150px;
+    }
+
+    .text_after_wave {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .learn {
+        width: 150px;
+        height: 45px;
+    }
+
+    .box {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navb {
+        width: 120px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    #main {
+        font-size: 1.5rem;
+    }
+
+    .wave-container {
+        height: 150px;
+    }
+
+    .text_after_wave {
+        font-size: 0.9rem;
+    }
+
+    .learn {
+        width: 130px;
+        height: 40px;
+    }
+
+    .box {
+        height: 200px;
+    }
+}
+.steps {
+    background-color: rgba(94, 129, 100, 0.547);
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.shead {
+    width: 100%;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: #2e2e2e;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shead p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+.step-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.step {
+    width: 45%;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.photo, .photo2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.photo img, .photo2 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+.photo:hover img, .photo2:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2e2e2e;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .steps {
+        padding: 20px;
+    }
+    .step-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .step {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .steps {
+        padding: 15px;
+    }
+    .step-items {
+        gap: 15px;
+    }
+    .step {
+        width: 90%;
+    }
+    .shead h2 {
+        font-size: clamp(1.2rem, 5vw, 2.1rem);
+    }
+}
+
+
+.query{
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 4vw, 8rem);
+    padding-top: 2vw;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+}
+.compile{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 2vw;
+}
+.faqs{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    width: 80vw;
+    column-gap: 5vw;
+    margin-left: 8.5vw;
+    line-height: 25px;
+}
+.q{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.links{
+    height: 30vh;
+    
+}
+footer {
+    background-color: #d8edd8;
+    color: black;
+    text-align: center;
+    padding-top: 9vw;
+    font-weight: bold;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.footer-logo img {
+    max-width: 150px;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 20px;
+}
+.link-column li {
+    margin: 0;
+}
+.link-column a {
+    color: black;
+    text-decoration: none;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-social img {
+    width: 30px;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-links {
+        grid-template-columns: 1fr;
+        margin-left: 8.5vw;
+    }
+    .footer-social img {
+        width: 25px;
+    }
+}
+.fb img{
+    height: 5vw;
+    width: auto;
+    position: relative;
+    bottom: 1vw;
+}
+.tw img{
+    height: 3vw;
+    width: auto;
+}
+.in img{
+    height: 3vw;
+    width: auto;
+}
+.questions{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 8.5vw;
+}

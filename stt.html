@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text</title>
+    <link rel="stylesheet" href="stt.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img id="logol" src="images-p/oratone_large-removebg-preview.png" alt="logo">
+        </a>
+        <button id="login" class="navb">Log In</button>
+    </nav>
+    <div class="click">
+        <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="40" width="10" height="20" fill="#000000" rx="5" ry="5">
+                <animate attributeName="height" values="10;40;10" dur="1s" begin="indefinite" />
+                <animate attributeName="y" values="45;30;45" dur="1s" begin="indefinite" />
+            </rect>
+            <rect x="40" y="30" width="10" height="40" fill="#000000" rx="5" ry="5">
+                <animate attributeName="height" values="15;50;15" dur="1.2s" begin="indefinite" />
+                <animate attributeName="y" values="42;20;42" dur="1.2s" begin="indefinite" />
+            </rect>
+            <rect x="60" y="20" width="10" height="60" fill="#000000" rx="5" ry="5">
+                <animate attributeName="height" values="20;60;20" dur="0.8s" begin="indefinite" />
+                <animate attributeName="y" values="40;10;40" dur="0.8s" begin="indefinite" />
+            </rect>
+            <rect x="80" y="30" width="10" height="40" fill="#000000" rx="5" ry="5">
+                <animate attributeName="height" values="15;50;15" dur="1s" begin="indefinite" />
+                <animate attributeName="y" values="42;20;42" dur="1s" begin="indefinite" />
+            </rect>
+            <rect x="100" y="40" width="10" height="20" fill="#000000" rx="5" ry="5">
+                <animate attributeName="height" values="10;40;10" dur="1.1s" begin="indefinite" />
+                <animate attributeName="y" values="45;30;45" dur="1.1s" begin="indefinite" />
+            </rect>
+        </svg>
+    </div>
+    <p class="head"> Speak and See the Text Below</p>
+    <div class="start">
+        <button onclick="startListening()">Start Speaking</button>
+    </div>
+    <p class="listen"></p>
+    <main>
+        <p id="output"></p>
+    </main>
+
+    <script src="stt.js"></script>
+</body>
+
+</html>
